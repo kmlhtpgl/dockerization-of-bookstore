@@ -51,10 +51,10 @@ Resources:
           mkdir -p /home/ec2-user/bookstore-api
           TOKEN="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"
           FOLDER="https://$TOKEN@raw.githubusercontent.com/kmlhtpgl/dockerization-of-bookstore/main"
-          curl -s --create-dirs -o "/home/ec-user/bookstore-api/app.py" -L "$FOLDER"app.py
-          curl -s --create-dirs -o "/home/ec-user/bookstore-api/requirements.txt" -L "$FOLDER"requirements.txt
-          curl -s --create-dirs -o "/home/ec-user/bookstore-api/Dockerfile" -L "$FOLDER"Dockerfile
-          curl -s --create-dirs -o "/home/ec-user/bookstore-api/docker-compose.yml" -L "$FOLDER"docker-compose.yml
+          curl -s --create-dirs -o "/home/ec2-user/bookstore-api/app.py" -L "$FOLDER"app.py
+          curl -s --create-dirs -o "/home/ec2-user/bookstore-api/requirements.txt" -L "$FOLDER"requirements.txt
+          curl -s --create-dirs -o "/home/ec2-user/bookstore-api/Dockerfile" -L "$FOLDER"Dockerfile
+          curl -s --create-dirs -o "/home/ec2-user/bookstore-api/docker-compose.yml" -L "$FOLDER"docker-compose.yml
           cd /home/ec2-user/bookstore-api
           docker build -t kml/bookstore-api:latest .
           docker-compose up -d
