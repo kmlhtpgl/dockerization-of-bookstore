@@ -11,7 +11,7 @@ services:
     networks:
       - clarusnet
   myapp:
-    image: kml/boostore-api:latest
+    image: kml/bookstore-api:latest
     restart: always
     depends_on:
       - database
