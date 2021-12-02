@@ -31,7 +31,7 @@ Resources:
     Properties:
       ImageId: ami-0ed9277fb7eb570c9
       InstanceType: t2.micro
-      Keyname: !Ref KeyPairName
+      KeyName: !Ref KeyPairName
       SecurityGroupIds:
         - !GetAtt DockerMachineSecurityGroup.GroupId
       Tags: 
